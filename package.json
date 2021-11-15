@@ -1,0 +1,31 @@
+{
+    "name": "my-hardhat-starter",
+    "version": "1.0.0",
+    "description": "tutorial in hardhat",
+    "main": "index.js",
+    "scripts": {
+        "compile": "npx harhat compile",
+        "test": "npx hardhat test",
+        "deploy": "npx hardhat run ./scripts/deploy.js",
+        "deploy:alchemy": "npx hardhat run ./script/deploy.js --network ropsten_alchemy",
+        "deploy:infura": "npx hardhat run ./script/deploy.js --network ropsten_infura"
+    },
+    "keywords": [
+        "hardhat",
+        "tutorial",
+        "beginner",
+        "starter"
+    ],
+    "author": "KevinNguyen",
+    "license": "MIT",
+    "devDependencies": {
+        "@nomiclabs/hardhat-ethers": "^2.0.2",
+        "@nomiclabs/hardhat-waffle": "^2.0.1",
+        "@truffle/hdwallet-provider": "^1.6.0",
+        "chai": "^4.3.4",
+        "dotenv": "^10.0.0",
+        "ethereum-waffle": "^3.4.0",
+        "ethers": "^5.5.1",
+        "hardhat": "^2.6.8"
+    }
+}
